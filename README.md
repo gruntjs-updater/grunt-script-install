@@ -103,7 +103,7 @@ grunt.initConfig({
 	          'scripts/*',
 	          'scripts/moduleA/**/*',
 	          'scripts/moduleB/**/*',
-	          'scripts/coffee/**/*
+	          'scripts/coffee/**/*'
 	        ],
 	        ext: '.js',
 	        filter: 'isFile'
