@@ -17,6 +17,13 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-script-install');
 ```
 
+For dependecies to be injected pop this snippet into your html:
+
+```html
+<!-- script-install -->
+<!-- end-script-install -->
+```
+
 ## The "scriptInstall" task
 
 ### Overview
@@ -46,8 +53,25 @@ A path to html file that will be injected with script tags.
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+This is an simple example that will pick up all js files specified and inject them in index.html file.
 
+Your html file:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<!-- script-install -->
+	<!-- end-script-install -->
+
+</body>
+</html>
+```
+
+Your grunt config:
 ```js
 grunt.initConfig({
   scriptInstall: {
@@ -69,6 +93,26 @@ grunt.initConfig({
     }
   },
 });
+```
+
+This will generate following html:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<!-- script-install -->
+	<script src="test/fixtures/scripts/file1.js"></script>
+	<script src="test/fixtures/scripts/moduleA/fileA1.js"></script>
+	<script src="test/fixtures/scripts/moduleA/fileA2.js"></script>
+	<script src="test/fixtures/scripts/moduleB/fileB1.js"></script>
+	<!-- end-script-install -->
+
+</body>
+</html>
 ```
 
 ## Contributing
