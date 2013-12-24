@@ -128,7 +128,7 @@ This will generate following html:
 	<script src="scripts/moduleA/fileA1.js"></script>
 	<script src="scripts/moduleA/fileA2.js"></script>
 	<script src="scripts/moduleB/fileB1.js"></script>
-	<script src="scripts/coffee/fileCoffee.coffee"></script>
+	<script src="scripts/coffee/fileCoffee.js"></script>
 	<!-- end-script-install -->
 
 </body>
