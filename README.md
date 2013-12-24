@@ -55,6 +55,20 @@ A path to html file where script tags will be injected.
 #### Default Options
 This is an simple example that will pick up all js files specified and inject them in index.html file.
 
+Assuming this is project stucture:
+
+```
+\app
+	\scripts
+		\moduleA
+			fileA1.js
+			fileA2.js
+		\moduleB
+			fileB1.js
+		file1.js
+	index.html
+```
+
 Your html file:
 ```html
 <!DOCTYPE html>
@@ -82,11 +96,11 @@ grunt.initConfig({
 	    files: [
 	      {
 	        expand: true,
-	        cwd: 'scripts',
+	        cwd: 'app',
 	        src: [
-	          '*.js',
-	          'moduleA/**/*.js',
-	          'moduleB/**/*.js'
+	          'scripts/*.js',
+	          'scripts/moduleA/**/*.js',
+	          'scripts/moduleB/**/*.js'
 	        ]
 	      }
 	    ],
@@ -105,10 +119,10 @@ This will generate following html:
 <body>
 
 	<!-- script-install -->
-	<script src="test/fixtures/scripts/file1.js"></script>
-	<script src="test/fixtures/scripts/moduleA/fileA1.js"></script>
-	<script src="test/fixtures/scripts/moduleA/fileA2.js"></script>
-	<script src="test/fixtures/scripts/moduleB/fileB1.js"></script>
+	<script src="scripts/file1.js"></script>
+	<script src="scripts/moduleA/fileA1.js"></script>
+	<script src="scripts/moduleA/fileA2.js"></script>
+	<script src="scripts/moduleB/fileB1.js"></script>
 	<!-- end-script-install -->
 
 </body>
