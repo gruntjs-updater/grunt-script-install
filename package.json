@@ -1,7 +1,7 @@
 {
   "name": "grunt-script-install",
-  "description": "The best Grunt plugin ever.",
-  "version": "0.1.0",
+  "description": "Simple plugin for injecting script tags to your html file.",
+  "version": "0.1.1",
   "homepage": "https://github.com/patrykziem/grunt-script-install",
   "author": {
     "name": "Patryk Ziemkowski",
