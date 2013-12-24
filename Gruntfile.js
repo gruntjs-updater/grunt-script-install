@@ -37,12 +37,13 @@ module.exports = function (grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: 'test/fixtures/scripts',
+						cwd: 'test/fixtures',
 						src: [
-							'*.js',
-							'moduleA/**/*.js',
-							'moduleB/**/*.js'
+							'scripts/*.js',
+							'scripts/moduleA/**/*.js',
+							'scripts/moduleB/**/*.js'
 						],
+						ext: '.js',
 						filter: 'isFile'
 					}
 				]
