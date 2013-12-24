@@ -17,14 +17,14 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-script-install');
 ```
 
-## The "script_install" task
+## The "scriptInstall" task
 
 ### Overview
 In your project's Gruntfile, add a section named `scriptInstall` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  script_install: {
+  scriptInstall: {
     options: {
       // Task-specific options go here.
     },
@@ -50,7 +50,7 @@ In this example, the default options are used to do something with whatever. So 
 
 ```js
 grunt.initConfig({
-  script_install: {
+  scriptInstall: {
     dev: {
 	    options: {
 	      html: 'index.html'
