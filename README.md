@@ -52,7 +52,6 @@ A path to html file where script tags will be injected.
 
 ### Usage Examples
 
-#### Default Options
 This is an simple example that will pick up all js files specified and inject them in index.html file.
 
 Assuming this is a project structure:
