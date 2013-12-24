@@ -48,7 +48,7 @@ grunt.initConfig({
 Type: `String`
 Default value: `'index.html'`
 
-A path to html file that will be injected with script tags.
+A path to html file where script tags will be injected.
 
 ### Usage Examples
 
