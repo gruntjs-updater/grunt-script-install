@@ -50,6 +50,12 @@ Default value: `'index.html'`
 
 A path to html file where script tags will be injected.
 
+#### options.prefix
+Type: `String`
+Default value: `''`
+
+Additional prefix before the path in script tag, for example `'/scripts'`
+
 ### Usage Examples
 
 This is an simple example that will pick up all js files specified and inject them in index.html file.
